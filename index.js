@@ -6,4 +6,5 @@ app.get("/", function(res, resp) {
 	return resp.json({ hi: "world" });
 });
 
-app.listen(5000);
+const PORT = process.env.PORT || 5000;
+app.listen(PORT);
